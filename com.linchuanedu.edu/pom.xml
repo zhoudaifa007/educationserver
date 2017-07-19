@@ -4,8 +4,22 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>groupId</groupId>
-    <artifactId>educationserver</artifactId>
+    <groupId>com.linchuanedu.edu</groupId>
+    <artifactId>com.linchuanedu.edu</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>com.linchuanedu.edu.main</module>
+        <module>com.linchuanedu.edu.api</module>
+        <module>com.linchuanedu.edu.service</module>
+        <module>com.linchuanedu.edu.common</module>
+    </modules>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.0.M2</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
 
 </project>
