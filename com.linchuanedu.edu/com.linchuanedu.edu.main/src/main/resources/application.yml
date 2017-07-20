@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: prod
+  datasource:
+    driverclassname: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.133.146.86:3306/edu
+    username: root
+    password: root

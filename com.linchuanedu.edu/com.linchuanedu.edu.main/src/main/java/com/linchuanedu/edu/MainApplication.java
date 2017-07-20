@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
+@SpringBootApplication
 public class MainApplication {
 
     public static void main(String[] args) {
@@ -13,5 +13,4 @@ public class MainApplication {
 
         System.out.println("服务器启动");
     }
-
 }
