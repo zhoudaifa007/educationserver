@@ -11,6 +11,6 @@ public class MainApplication {
     public static void main(String[] args) {
         SpringApplication.run(MainApplication.class, args);
 
-        System.out.println("服务器启动");
+        System.out.println("服务器启动..............");
     }
 }
