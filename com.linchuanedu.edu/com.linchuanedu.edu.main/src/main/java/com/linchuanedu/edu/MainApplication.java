@@ -2,8 +2,6 @@ package com.linchuanedu.edu;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 
 @SpringBootApplication
 public class MainApplication {
@@ -12,5 +10,9 @@ public class MainApplication {
         SpringApplication.run(MainApplication.class, args);
 
         System.out.println("服务器启动..............");
+
+        for (int i = 0; i < 10; i++){
+            System.out.println(i);
+        }
     }
 }
