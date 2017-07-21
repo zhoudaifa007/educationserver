@@ -1,6 +1,6 @@
 spring:
-  profiles:
-    active: prod
+#  profiles:
+#    active: prod
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://10.133.146.86:3306/edu
