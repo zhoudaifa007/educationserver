@@ -21,6 +21,7 @@
         <module>com.linchuanedu.edu.api</module>
         <module>com.linchuanedu.edu.service</module>
         <module>com.linchuanedu.edu.common</module>
+        <module>com.linchuanedu.edu.dao</module>
     </modules>
 
     <properties>

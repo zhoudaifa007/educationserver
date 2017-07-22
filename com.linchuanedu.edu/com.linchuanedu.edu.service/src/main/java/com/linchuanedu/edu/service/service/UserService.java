@@ -1,5 +1,6 @@
 package com.linchuanedu.edu.service.service;
 
+import com.linchuanedu.edu.service.cache.UserCache;
 import org.springframework.stereotype.Service;
 
 /**
@@ -10,4 +11,10 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UserService {
+
+    private UserCache userCache;
+
+    public void createUser(String phone, String password){
+        userCache.createUser(phone,password);
+    }
 }

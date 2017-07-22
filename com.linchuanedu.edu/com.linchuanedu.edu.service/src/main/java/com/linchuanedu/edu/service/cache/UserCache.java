@@ -10,4 +10,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class UserCache {
+
+    public void createUser(String phone,String password){
+
+    }
 }
