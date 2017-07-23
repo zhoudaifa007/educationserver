@@ -1,4 +1,4 @@
-package com.linchuanedu.edu.dao;
+package com.linchuanedu.edu.dao.impl;
 
 import org.springframework.stereotype.Repository;
 
@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
  */
 
 @Repository
-public class UserDao {
+public class UserDaoImpl {
 }
