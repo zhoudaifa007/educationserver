@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -19,6 +20,7 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping(value = "/v1/edu/app/user")
 public class UserController {
 
+    @Resource
     private UserService userService;
 
     @RequestMapping(value = "/signin", method = RequestMethod.POST, consumes = "application/json;charset=UTF-8", produces = "application/json;charset=UTF-8")

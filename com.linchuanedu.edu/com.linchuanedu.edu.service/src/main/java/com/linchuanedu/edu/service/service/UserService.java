@@ -3,6 +3,8 @@ package com.linchuanedu.edu.service.service;
 import com.linchuanedu.edu.service.cache.UserCache;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+
 /**
  * Created by pansp
  * Date: 2017-7-21
@@ -12,6 +14,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService {
 
+    @Resource
     private UserCache userCache;
 
     public void createUser(String phone, String password){
