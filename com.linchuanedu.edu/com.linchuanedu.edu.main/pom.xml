@@ -6,21 +6,49 @@
     <parent>
         <groupId>com.linchuanedu.edu</groupId>
         <artifactId>com.linchuanedu.edu</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>${edu-version}</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.linchuanedu.edu</groupId>
     <artifactId>com.linchuanedu.edu.main</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+
+    <properties>
+        <start-class>com.linchuanedu.edu.main.EduApplication</start-class>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.linchuanedu.edu</groupId>
+            <artifactId>com.linchuanedu.edu.api</artifactId>
+            <version>${edu-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linchuanedu.edu</groupId>
+            <artifactId>com.linchuanedu.edu.dao</artifactId>
+            <version>${edu-version}</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>1.3.3.RELEASE</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>${start-class}</mainClass>
+                            <layout>ZIP</layout>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

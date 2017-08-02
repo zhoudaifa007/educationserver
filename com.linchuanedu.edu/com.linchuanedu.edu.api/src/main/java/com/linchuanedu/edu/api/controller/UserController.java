@@ -2,10 +2,10 @@ package com.linchuanedu.edu.api.controller;
 
 import com.linchuanedu.edu.common.model.DTO.CreateUserDTO;
 import com.linchuanedu.edu.service.service.UserService;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
  * Time: 15:52
  */
 
-@Controller
+@RestController
 @RequestMapping(value = "/v1/edu/app/user")
 public class UserController {
 
@@ -30,7 +30,7 @@ public class UserController {
 
         String phone = createUserDTO.getPhone();
         String password = createUserDTO.getPassword();
-        userService.createUser(phone, password);
+        userService.createUser(createUserDTO);
 
 
     }

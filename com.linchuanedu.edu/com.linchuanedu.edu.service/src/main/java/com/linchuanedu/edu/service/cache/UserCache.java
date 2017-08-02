@@ -1,6 +1,12 @@
 package com.linchuanedu.edu.service.cache;
 
+import com.linchuanedu.edu.common.model.DTO.CreateUserDTO;
+import com.linchuanedu.edu.dao.IUserDao;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import javax.annotation.Resource;
+
 
 /**
  * Created by pansp
@@ -11,7 +17,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserCache {
 
-    public void createUser(String phone,String password){
+    @Resource
+    private IUserDao iUserDao;
 
+    public void createUser(CreateUserDTO createUserDTO){
+        iUserDao.createUser(createUserDTO);
     }
 }

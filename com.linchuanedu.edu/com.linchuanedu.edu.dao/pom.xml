@@ -5,11 +5,18 @@
     <parent>
         <artifactId>com.linchuanedu.edu</artifactId>
         <groupId>com.linchuanedu.edu</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>${edu-version}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>com.linchuanedu.edu.dao</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>com.linchuanedu.edu</groupId>
+            <artifactId>com.linchuanedu.edu.common</artifactId>
+            <version>${edu-version}</version>
+        </dependency>
+    </dependencies>
 
 
 </project>

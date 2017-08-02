@@ -5,7 +5,8 @@
     <parent>
         <groupId>com.linchuanedu.edu</groupId>
         <artifactId>com.linchuanedu.edu</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>${edu-version}</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -15,12 +16,12 @@
         <dependency>
             <groupId>com.linchuanedu.edu</groupId>
             <artifactId>com.linchuanedu.edu.common</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${edu-version}</version>
         </dependency>
         <dependency>
             <groupId>com.linchuanedu.edu</groupId>
             <artifactId>com.linchuanedu.edu.service</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${edu-version}</version>
         </dependency>
     </dependencies>
 

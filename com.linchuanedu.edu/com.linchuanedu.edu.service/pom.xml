@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.linchuanedu.edu</groupId>
         <artifactId>com.linchuanedu.edu</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>${edu-version}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -15,7 +15,12 @@
         <dependency>
             <groupId>com.linchuanedu.edu</groupId>
             <artifactId>com.linchuanedu.edu.dao</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${edu-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linchuanedu.edu</groupId>
+            <artifactId>com.linchuanedu.edu.common</artifactId>
+            <version>${edu-version}</version>
         </dependency>
     </dependencies>
     

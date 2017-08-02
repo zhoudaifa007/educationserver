@@ -1,5 +1,6 @@
 package com.linchuanedu.edu.service.service;
 
+import com.linchuanedu.edu.common.model.DTO.CreateUserDTO;
 import com.linchuanedu.edu.service.cache.UserCache;
 import org.springframework.stereotype.Service;
 
@@ -17,7 +18,7 @@ public class UserService {
     @Resource
     private UserCache userCache;
 
-    public void createUser(String phone, String password){
-        userCache.createUser(phone,password);
+    public void createUser(CreateUserDTO createUserDTO){
+        userCache.createUser(createUserDTO);
     }
 }

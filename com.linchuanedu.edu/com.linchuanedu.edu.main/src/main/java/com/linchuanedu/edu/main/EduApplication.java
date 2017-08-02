@@ -1,11 +1,13 @@
-package com.linchuanedu.edu;
+package com.linchuanedu.edu.main;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.linchuanedu.edu"})
+@MapperScan("com.linchuanedu.edu.dao")
 public class EduApplication {
 
     private static final Logger logger = LoggerFactory.getLogger(EduApplication.class);

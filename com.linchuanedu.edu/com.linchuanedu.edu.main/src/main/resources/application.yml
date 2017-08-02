@@ -1,8 +1,24 @@
+# Server settings
+server:
+    port: 18080
+    address: 127.0.0.1
+
+# SPRING PROFILES
 spring:
 #  profiles:
 #    active: prod
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://10.133.146.86:3306/edu
+    url: jdbc:mysql://10.133.146.88:3306/edu
     username: root
     password: root
+
+mybatis:
+  mapperLocations: classpath*:mapper/*.xml
+  typeAliasesPackage: com.linchuanedu.edu.common.model.DO
+
+# LOGGING
+logging:
+    level: com.ibatis:DEBUG
+
+
