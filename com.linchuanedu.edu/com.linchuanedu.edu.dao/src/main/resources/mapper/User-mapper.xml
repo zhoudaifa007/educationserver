@@ -6,4 +6,12 @@
         t_user_info(phone,password)
         VALUES (#{phone},#{password})
     </insert>
+
+    <select id="getUser" parameterType="map" resultType="com.linchuanedu.edu.common.model.DO.UserDO">
+        SELECT
+        id,
+        account account,
+        user_name userName
+        FROM t_user_info
+    </select>
 </mapper>

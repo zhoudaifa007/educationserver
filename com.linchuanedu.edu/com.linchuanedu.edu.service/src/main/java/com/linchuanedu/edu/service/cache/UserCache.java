@@ -1,11 +1,16 @@
 package com.linchuanedu.edu.service.cache;
 
+import com.linchuanedu.edu.common.model.DO.UserDO;
 import com.linchuanedu.edu.common.model.DTO.CreateUserDTO;
 import com.linchuanedu.edu.dao.IUserDao;
+import com.linchuanedu.edu.plugin.PageParams;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -23,4 +28,17 @@ public class UserCache {
     public void createUser(CreateUserDTO createUserDTO){
         iUserDao.createUser(createUserDTO);
     }
+
+    public List<UserDO> getUser() {
+        Map<String, Object> paramMap = new HashMap<String, Object>();
+        PageParams pageParams = new PageParams();
+        pageParams.setUseFlag(true);
+        pageParams.setCheckFlag(false);
+        pageParams.setPage(2);
+        pageParams.setPageSize(5);
+        paramMap.put("roleName", "test");
+        paramMap.put("$pageParams", pageParams);
+        return iUserDao.getUser(paramMap);
+    }
+
 }

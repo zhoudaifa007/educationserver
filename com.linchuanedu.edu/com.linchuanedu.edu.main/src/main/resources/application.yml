@@ -9,9 +9,9 @@ spring:
 #    active: prod
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://10.133.146.88:3306/edu
+    url: jdbc:mysql://10.133.143.109:3306/edu
     username: root
-    password: root
+    password: redhat
 
 mybatis:
   mapperLocations: classpath*:mapper/*.xml

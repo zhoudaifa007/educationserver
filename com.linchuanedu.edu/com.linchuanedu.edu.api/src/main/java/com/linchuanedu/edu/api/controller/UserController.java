@@ -30,9 +30,6 @@ public class UserController {
 
         String phone = createUserDTO.getPhone();
         String password = createUserDTO.getPassword();
-        userService.createUser(createUserDTO);
-
-
+        userService.getUser();
     }
-
 }

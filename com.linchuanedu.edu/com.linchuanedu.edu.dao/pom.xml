@@ -16,6 +16,12 @@
             <artifactId>com.linchuanedu.edu.common</artifactId>
             <version>${edu-version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.linchuanedu.edu</groupId>
+            <artifactId>com.linchuanedu.edu.plugin</artifactId>
+            <version>${edu-version}</version>
+        </dependency>
     </dependencies>
 
 
