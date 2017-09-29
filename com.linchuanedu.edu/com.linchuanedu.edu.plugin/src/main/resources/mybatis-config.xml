@@ -10,7 +10,7 @@
             <!--默认每页20条-->
             <property name="default.pageSize" value="20"/>
             <!--默认不启用分页插件-->
-            <property name="default.useFlag" value="false"/>
+            <property name="default.useFlag" value="true"/>
             <!--默认不检查页码-->
             <property name="default.checkFlag" value="false"/>
         </plugin>

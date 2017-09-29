@@ -16,6 +16,7 @@ spring:
 mybatis:
   mapperLocations: classpath*:mapper/*.xml
   typeAliasesPackage: com.linchuanedu.edu.common.model.DO
+  config-location: classpath:mybatis-config.xml
 
 # LOGGING
 logging:

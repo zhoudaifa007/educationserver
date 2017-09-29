@@ -38,7 +38,11 @@ public class UserCache {
         pageParams.setPageSize(5);
         paramMap.put("roleName", "test");
         paramMap.put("$pageParams", pageParams);
-        return iUserDao.getUser(paramMap);
+        List<UserDO> list =  iUserDao.getUser(paramMap);
+        Integer total = pageParams.getTotal();
+        System.out.println("---------");
+        System.out.println(total);
+        return list;
     }
 
 }

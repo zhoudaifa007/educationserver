@@ -5,12 +5,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication(scanBasePackages = {"com.linchuanedu.edu"})
 @MapperScan("com.linchuanedu.edu.dao")
-@ImportResource(locations={"classpath:plugin/mybatis-plugin.xml"})
 public class EduApplication {
 
     private static final Logger logger = LoggerFactory.getLogger(EduApplication.class);
